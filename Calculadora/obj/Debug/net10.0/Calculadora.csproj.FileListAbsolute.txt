@@ -12,3 +12,4 @@ C:\Users\victo\OneDrive\Documentos\C#-Calculadora\calculadora\obj\Debug\net10.0\
 C:\Users\victo\OneDrive\Documentos\C#-Calculadora\calculadora\obj\Debug\net10.0\Calculadora.pdb
 C:\Users\victo\OneDrive\Documentos\C#-Calculadora\calculadora\obj\Debug\net10.0\Calculadora.genruntimeconfig.cache
 C:\Users\victo\OneDrive\Documentos\C#-Calculadora\calculadora\obj\Debug\net10.0\ref\Calculadora.dll
+C:\Users\victo\OneDrive\Documentos\C#-Calculadora\calculadora\obj\Debug\net10.0\Calculadora.sourcelink.json
