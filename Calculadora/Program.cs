@@ -54,3 +54,13 @@ catch
 
 //
 
+static float Adição(float Num1, float Num2);
+{
+    return Num1 + Num2;
+}
+
+switch(Decisao)
+{
+    case 1: 
+        Console.WhiteLead("O Valor da Adição é: " + Adição);
+}
