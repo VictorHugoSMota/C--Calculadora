@@ -1,69 +1,80 @@
-﻿// inicio:
-//  Console.WriteLine("Escolha qual Operação Usar:");
-// Console.WriteLine("1 - Adição");
-// Console.WriteLine("2 - Substituição");
-// Console.WriteLine("3 - Divisão");
-// Console.WriteLine("4 - Multiplicação");
+﻿/*
+1° MODELO -------------------
 
-// var Decisao = Console.ReadLine();
-// int Decisao = 0;
+inicio:
+ Console.WriteLine("Escolha qual Operação Usar:");
+Console.WriteLine("1 - Adição");
+Console.WriteLine("2 - Substituição");
+Console.WriteLine("3 - Divisão");
+Console.WriteLine("4 - Multiplicação");
 
-// try
-// {
-//     Decisao INT = Convert.ToInt16(Decisao);
-// }
-// catch
-// {
-//     Console.WhiteLine("Valor Invalido!");
-//     goto inicio;
-// }
+var Decisao = Console.ReadLine();
+int Decisao = 0;
 
-// // 1° Numero --
+try
+{
+    Decisao INT = Convert.ToInt16(Decisao);
+}
+catch
+{
+    Console.WhiteLine("Valor Invalido!");
+    goto inicio;
+}
 
-// Console.WhiteLine("Digite o 1° Numero: ");
-// var Num1 = ConsoleColor.ReadLine();
 
-// float NumeroConvertido;
+Console.WhiteLine("Digite o 1° Numero: ");
+var Num1 = ConsoleColor.ReadLine();
 
-// try
-// {
-//     var NumeroConvertido = float.Parse(Num1).Replace(",",",",".");
-// }
-// catch
-// {
-//     Console.Clear();
-//     goto inicio;
-// }
+float NumeroConvertido;
 
-// // 2° Numero --
+try
+{
+    var NumeroConvertido = float.Parse(Num1).Replace(",",",",".");
+}
+catch
+{
+    Console.Clear();
+    goto inicio;
+}
 
-// Console.WhiteLine("Digite o 2° Numero: ");
-// var Num2 = ConsoleColor.ReadLine();
+Console.WhiteLine("Digite o 2° Numero: ");
+var Num2 = ConsoleColor.ReadLine();
 
-// float NumeroConvertido;
+float NumeroConvertido;
 
-// try
-// {
-//     var NumeroConvertido = float.Parse(Num1).Replace(",",",",".");
-// }
-// catch
-// {
-//     Console.Clear();
-//     goto inicio;
-// }
+try
+{
+    var NumeroConvertido = float.Parse(Num1).Replace(",",",",".");
+}
+catch
+{
+    Console.Clear();
+    goto inicio;
+}
 
-// //
 
-// static float Adição(float Num1, float Num2);
-// {
-//     return Num1 + Num2;
-// }
+static float Adição(float Num1, float Num2);
+{
+    return Num1 + Num2;
+}
 
-// switch(Decisao)
-// {
-//     case 1: 
-//         Console.WhiteLead("O Valor da Adição é: " + Adição);
-// }
+switch(Decisao)
+{
+    case 1: 
+        Console.WhiteLead("O Valor da Adição é: " + Adição);
+}
+*/
+
+
+
+
+
+
+
+
+
+
+/* 2° MODELO -------------------
 
 using System;
 
@@ -126,3 +137,53 @@ switch (decisao)
 }
 
 Console.WriteLine($"Resultado: {resultado}");
+*/
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("=== CALCULADORA ===");
+        Console.WriteLine("1 - Adição");
+        Console.WriteLine("2 - Subtração");
+        Console.WriteLine("3 - Divisão");
+        Console.WriteLine("4 - Multiplicação");
+
+        Console.Write("Escolha uma opção: ");
+        int opcao = int.Parse(Console.ReadLine());
+
+        Console.Write("Digite o primeiro número: ");
+        float num1 = float.Parse(Console.ReadLine());
+
+        Console.Write("Digite o segundo número: ");
+        float num2 = float.Parse(Console.ReadLine());
+
+        float resultado = 0;
+
+        if (opcao == 1)
+        {
+            resultado = num1 + num2;
+        }
+        else if (opcao == 2)
+        {
+            resultado = num1 - num2;
+        }
+        else if (opcao == 3)
+        {
+            resultado = num1 / num2;
+        }
+        else if (opcao == 4)
+        {
+            resultado = num1 * num2;
+        }
+        else
+        {
+            Console.WriteLine("Opção inválida.");
+            return;
+        }
+
+        Console.WriteLine("Resultado: " + resultado);
+    }
+}
