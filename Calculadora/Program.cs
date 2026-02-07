@@ -139,6 +139,7 @@ switch (decisao)
 Console.WriteLine($"Resultado: {resultado}");
 */
 
+/* 
 using System;
 
 class Program
@@ -187,3 +188,57 @@ class Program
         Console.WriteLine("Resultado: " + resultado);
     }
 }
+*/
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("=== Calculadora ===");
+        Console.WriteLine(" 1 - Adição");
+        Console.WriteLine(" 2 - Subtração");
+        Console.WriteLine(" 3 - Divisão");
+        Console.WriteLine(" 4 - Multiplicação");
+
+        Console.WriteLine("Escolhe a opção desejada: ");
+        var decisao = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Escolha o 1° Numero: ");
+        var Num1 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine("Escolha o 2° Numero: ");
+        var Num2 = float.Parse(Console.ReadLine());
+
+        float resultado = 0;
+
+        if(decisao == 1)
+        {
+            resultado = Num1 + Num2;
+        } 
+
+        else if(decisao ==2)
+        {
+            resultado = Num1 - Num2;
+        }
+
+        else if(decisao == 3)
+        {
+            resultado = Num1 / Num2;
+        }
+
+        else if( decisao == 4)
+        {
+            resultado= Num1 * Num2;
+        }
+
+        else
+        {
+            Console.WriteLine("Opção Invalida");
+            return;
+        }
+
+        Console.WriteLine("o Resultado é: " + resultado);
+        
+    }
+    };
